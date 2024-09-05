@@ -7,6 +7,13 @@
 Welcome to the Javascript Pro repository! 
 This project is a comprehensive collection of JavaScript functions, data types, and inner functions, exploring their usage and providing examples to help developers enhance their understanding of JavaScript and TypeScript concepts.
 
+## Auther
+Deepesh suryavanshi
+- ** linkdin:
+- ** Twitter:
+- ** Blog:
+- ** Instagram:
+
 ## Features
 
 - **JavaScript Functions**: Explore various types of functions, including arrow functions, anonymous functions, and higher-order functions.
