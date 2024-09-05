@@ -9,10 +9,10 @@ This project is a comprehensive collection of JavaScript functions, data types, 
 
 ## Auther
 Deepesh suryavanshi
-- ** linkdin:
-- ** Twitter:
-- ** Blog:
-- ** Instagram:
+- **linkdin:[Deepesh suryavanshi](https://www.linkedin.com/in/deepesh-suryavanshi/)
+- **Twitter:[Deepesh Dev](https://x.com/DeepeshSinghDev)
+- **Instagram:[@thedeepesh_x](https://www.instagram.com/deepeshxthakur/)
+- **Blog:[Bloger.cm](http://deepeshdeveloper.blogspot.com/)
 
 ## Features
 
@@ -31,4 +31,4 @@ Deepesh suryavanshi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/js-functions-and-types.git
+   git clone [https://github.com/](https://github.com/DeepeshSuryavanshi/The-JavaScript-Pro.git
