@@ -1,0 +1,133 @@
+JavaScript has several data types that are used to store various kinds of data. These data types are categorized into two main groups: **Primitive** and **Non-Primitive** (also known as Reference types). 
+
+### 1. **Primitive Data Types**
+Primitive data types are the basic data types in JavaScript. They are immutable, meaning their values cannot be changed once assigned.
+
+#### a. **Number**
+- **Description:** Represents both integer and floating-point numbers.
+- **Use Case:** Used for arithmetic operations, like addition, subtraction, etc.
+- **Syntax:**
+
+```javascript
+let age = 25; // integer
+let price = 99.99; // floating-point number
+```
+
+#### b. **String**
+- **Description:** Represents a sequence of characters enclosed in single, double, or backticks.
+- **Use Case:** Used to store and manipulate text.
+- **Syntax:**
+
+```javascript
+let name = "Deepesh"; // double quotes
+let greeting = 'Hello, World!'; // single quotes
+let message = `Hi, ${name}!`; // template literal (backticks)
+```
+
+#### c. **Boolean**
+- **Description:** Represents a logical entity and can have two values: `true` or `false`.
+- **Use Case:** Used in conditional testing, like if statements.
+- **Syntax:**
+
+```javascript
+let isActive = true;
+let isLoggedIn = false;
+```
+
+#### d. **Undefined**
+- **Description:** A variable that has been declared but not assigned a value.
+- **Use Case:** Used to check if a variable has been assigned a value.
+- **Syntax:**
+
+```javascript
+let x;
+console.log(x); // Output: undefined
+```
+
+#### e. **Null**
+- **Description:** Represents the intentional absence of any object value.
+- **Use Case:** Used to explicitly set a variable with no value.
+- **Syntax:**
+
+```javascript
+let selectedColor = null;
+```
+
+#### f. **Symbol** (Introduced in ES6)
+- **Description:** Represents a unique and immutable identifier.
+- **Use Case:** Used to create unique identifiers for objects.
+- **Syntax:**
+
+```javascript
+let sym1 = Symbol('description');
+let sym2 = Symbol('description'); // sym1 and sym2 are unique
+```
+
+#### g. **BigInt** (Introduced in ES2020)
+- **Description:** Represents whole numbers larger than the maximum safe integer (`Number.MAX_SAFE_INTEGER`).
+- **Use Case:** Used when dealing with large integers that exceed the limit of the `Number` type.
+- **Syntax:**
+
+```javascript
+let bigNumber = 9007199254740991n; // append 'n' to the end of the number
+```
+
+### 2. **Non-Primitive Data Types**
+Non-Primitive data types are objects in JavaScript. They are mutable, meaning their values can be changed.
+
+#### a. **Object**
+- **Description:** Represents a collection of key-value pairs.
+- **Use Case:** Used to store data with properties and methods.
+- **Syntax:**
+
+```javascript
+let person = {
+  name: "Deepesh",
+  age: 25,
+  greet: function() {
+    console.log("Hello!");
+  }
+};
+
+console.log(person.name); // Output: Deepesh
+person.greet(); // Output: Hello!
+```
+
+#### b. **Array**
+- **Description:** Represents an ordered collection of elements.
+- **Use Case:** Used to store multiple values in a single variable.
+- **Syntax:**
+
+```javascript
+let fruits = ["Apple", "Banana", "Mango"];
+console.log(fruits[0]); // Output: Apple
+```
+
+#### c. **Function**
+- **Description:** Represents a block of reusable code that can be executed whenever called.
+- **Use Case:** Used to define a specific task or calculation.
+- **Syntax:**
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(5, 3)); // Output: 8
+```
+
+#### d. **Date**
+- **Description:** Represents a single moment in time.
+- **Use Case:** Used to handle dates and times.
+- **Syntax:**
+
+```javascript
+let now = new Date();
+console.log(now); // Output: Current date and time
+```
+
+### Summary
+- **Primitive Types:** Number, String, Boolean, Undefined, Null, Symbol, BigInt.
+- **Non-Primitive Types:** Object, Array, Function, Date.
+
+These data types are fundamental to understanding how JavaScript works and are used in various scenarios depending on the requirements of the code you are writing.
