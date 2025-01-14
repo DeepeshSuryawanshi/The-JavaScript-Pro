@@ -10,7 +10,6 @@ function car(){
     }
     return home;
 }
-
 let home = car();
 let me = home()
 let intro = me();
