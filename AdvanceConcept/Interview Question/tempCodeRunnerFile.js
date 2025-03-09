@@ -1,0 +1,1 @@
+console.log(cache.get(4))
