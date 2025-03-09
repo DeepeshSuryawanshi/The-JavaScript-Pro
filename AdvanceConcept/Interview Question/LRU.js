@@ -28,10 +28,19 @@ class LRUCashe {
             console.log(`updating the tail ${node.key}: ${node.value}`);
             this.tail = node.prev;
         }
+        this.map.delete(node.key    )
     }
 
     get(key) {
-        return this.map;
+        if(!this.map.has(key)) return null;
+        const node = this.map.get(key);
+        this.#removeNode(node)
+        node.next = this.head
+        node.prev = null;
+        if(this.head !== null){
+            this.head.pre = node;
+        }
+        return node.value;
     }
 
     // put method in the LRU
@@ -48,7 +57,8 @@ class LRUCashe {
         if (this.length === this.capacity) {
             // chack the key is exist if not so remove the last node 
             if (!this.map.has(key)) {
-                this.#removeNode(this.tail)
+                this.#removeNode(this.tail);
+                this.length --;
             }
         }
 
@@ -62,6 +72,11 @@ class LRUCashe {
 
         // pointing in the head 
         this.head = node;
+
+        // setting the head preview
+        if(this.head !== null){
+            this.head.prev = node;
+        }
 
         // checking the tail 
         if (this.tail === null) this.tail = this.head
@@ -79,11 +94,11 @@ class LRUCashe {
             arr.push(current)
             current = current.next;
         }
-        // return arr.reduce((arr, curr) => arr.concat(`-->[{${curr.key} : ${curr.value}}]`), "")
-        return arr;
+        return arr.reduce((arr, curr) => arr.concat(`-->[{${curr.key} : ${curr.value}}]`), "")
+        // return arr;
     }
 }
-const cache = new LRUCashe(3)
+const cache = new LRUCashe(2)
 cache.put(1, 10)
 cache.put(2, 20)
 cache.put(3, 30)
