@@ -1,4 +1,5 @@
 class LRUCache {
+
     constructor(capacity) {
         this.capacity = Number(capacity);
         this.length = 0;
@@ -88,9 +89,12 @@ class LRUCache {
     }
 }
 
-const cache = new LRUCache(2);
+const cache = new LRUCache(5);
 cache.put(1, 10);
 cache.put(2, 20);
 cache.put(3, 30);
 cache.put(4, 40);
-console.log(cache.debug()); // Expected output: --> {3: 30} --> {2: 20}
+cache.put(5,50);
+cache.put(6,60);
+console.log(cache.get(4))
+console.log(cache.debug());
